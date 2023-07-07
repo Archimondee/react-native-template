@@ -8,7 +8,8 @@
   },
   "github": {
     "tokenRef": "TOKEN_RELEASE_IT",
-    "release": false,
+    "release": true,
+    "releaseName": "Release ${version}",
     "autoGenerate": true,
     "comments": {
       "submit": true,
