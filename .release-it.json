@@ -19,7 +19,7 @@
     "tagArgs": [],
     "push": true,
     "pushArgs": ["--follow-tags"],
-    "pushRepo": ""
+    "pushRepo": "https://github.com/archimondee/react-native-71-template.git"
   },
   "npm": {
     "publish": false
