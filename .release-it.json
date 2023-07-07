@@ -1,0 +1,9 @@
+{
+  "github": {
+    "tokenRef": "TOKEN_RELEASE_IT",
+    "release": true,
+    "comments": {
+      "submit": true
+    }
+  }
+}
