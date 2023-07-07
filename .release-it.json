@@ -11,7 +11,8 @@
     "release": false,
     "autoGenerate": true,
     "comments": {
-      "submit": true
+      "submit": true,
+      "pr": ":rocket: _This pull request is included in v${version}. See [${releaseName}](${releaseUrl}) for release notes._"
     }
   },
   "plugins": {
