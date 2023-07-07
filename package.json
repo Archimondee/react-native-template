@@ -1,0 +1,44 @@
+{
+  "name": "@archimondee/react-native-71-template",
+  "version": "0.0.1",
+  "description": "It is a minimalist React Native template with preconfigured common set of packages to start a new app.",
+  "scripts": {
+    "test": "exit 0",
+    "release:major": "npx release-it -- major",
+    "release:minor": "npx release-it -- minor",
+    "release:patch": "npx release-it -- patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/archimondee/react-native-71-template.git"
+  },
+  "keywords": [
+    "template",
+    "boilerplate",
+    "starter",
+    "react-native",
+    "react",
+    "native"
+  ],
+  "author": "Gilang Aditya R (https://ajay-kumar.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/archimondee/react-native-71-template/issues"
+  },
+  "dependencies": {},
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release v${version}"
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular",
+        "infile": "CHANGELOG.md"
+      }
+    }
+  },
+  "devDependencies": {
+    "@release-it/conventional-changelog": "^3.3.0",
+    "release-it": "^14.11.5"
+  }
+}
