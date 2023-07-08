@@ -10,7 +10,7 @@
   "npm": {
     "publish": false
   },
-  "gitlab": {
+  "github": {
     "tokenRef": "TOKEN_RELEASE_IT",
     "release": true,
     "releaseName": "Release ${version}",
