@@ -5,14 +5,15 @@
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "lint": "tsc && eslint . --ext .js,.jsx,.ts,.tsx --cache",
+    "lint": "tsc && eslint . --ext .js,.jsx,.ts,.tsx --cache --fix",
     "start": "react-native start",
     "test": "jest",
     "clean": "cd android && ./gradlew clean && cd .."
   },
   "dependencies": {
     "react": "18.2.0",
-    "react-native": "0.71.12"
+    "react-native": "0.71.12",
+    "react-native-reanimated": "^3.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
