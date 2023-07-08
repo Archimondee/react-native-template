@@ -1,12 +1,16 @@
 {
   "git": {
     "commitMessage": "v${version}",
-    "tagName": "v${version}"
+    "tagName": "v${version}",
+    "changelog": "npx auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/main/templates/changelog-compact.hbs"
+  },
+  "hooks": {
+    "after:bump": "npx auto-changelog -p"
   },
   "npm": {
     "publish": false
   },
-  "github": {
+  "gitlab": {
     "tokenRef": "TOKEN_RELEASE_IT",
     "release": true,
     "releaseName": "Release ${version}",
