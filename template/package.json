@@ -8,11 +8,23 @@
     "lint": "tsc && eslint . --ext .js,.jsx,.ts,.tsx --cache --fix",
     "start": "react-native start",
     "test": "jest",
-    "clean": "cd android && ./gradlew clean && cd .."
+    "clean": "cd android && ./gradlew clean && cd ..",
+    "android:dev": "npx react-native run-android --mode=developmentdebug",
+    "android:prod": "npx react-native run-android --mode=productiondebug",
+    "android:staging": "npx react-native run-android --mode=stagingdebug",
+    "ios:dev": "ENVFILE=.env.development && npx react-native run-ios --scheme 'Development' --simulator='iPhone 13 Pro'",
+    "ios:staging": "ENVFILE=.env.development && npx react-native run-ios --scheme 'Staging' --simulator='iPhone 13 Pro'",
+    "ios:prod": "ENVFILE=.env.production && npx react-native run-ios --scheme 'Production' --simulator='iPhone 13 Pro'",
+    "build:apk:dev": "cd ./android && ./gradlew clean app:assembleDevelopmentRelease && cd ..",
+    "build:apk:staging": "cd ./android && ./gradlew clean app:assembleStagingRelease && cd ..",
+    "build:apk:prod": "cd ./android && ./gradlew clean app:assembleProductionRelease && cd ..",
+    "build:aab:dev": "cd ./android && ./gradlew clean app:bundleProductionDebug && cd ..",
+    "build:aab:prod": "cd ./android && ./gradlew clean app:bundleProductionRelease && cd .."
   },
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.71.12",
+    "react-native-config": "^1.5.1",
     "react-native-reanimated": "^3.3.0"
   },
   "devDependencies": {

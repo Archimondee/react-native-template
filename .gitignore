@@ -75,6 +75,7 @@ template/.eslintcache
 .env
 .env.staging
 .env.production
+.env.development
 
 #others
 TODO
