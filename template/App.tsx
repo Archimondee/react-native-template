@@ -1,43 +1,26 @@
-import React from "react";
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  useColorScheme,
-  View,
-  Text,
-} from "react-native";
-import Config from "react-native-config";
-import { Colors, Header } from "react-native/Libraries/NewAppScreen";
+import React, { useEffect } from "react";
+import { LogBox } from "react-native";
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import { RootSiblingParent } from "react-native-root-siblings";
+import { enableScreens } from "react-native-screens";
+import AppNavigator from "navigations/AppNavigator";
 
-function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === "dark";
+const App = () => {
+  enableScreens(true);
+  useEffect(() => {
+    LogBox.ignoreLogs(["VirtualizedLists should never be nested"]);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
+    // if (Config.STATUS === "PRODUCTION") {
+    //   GlobalDebug(false, true);
+    // }
+  }, []);
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? "light-content" : "dark-content"}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}
-      >
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}
-        >
-          <Text>STATUS ENV = {Config.STATUS}</Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <SafeAreaProvider>
+      <RootSiblingParent>
+        <AppNavigator />
+      </RootSiblingParent>
+    </SafeAreaProvider>
   );
-}
+};
 
 export default App;
