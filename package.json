@@ -5,7 +5,8 @@
   "scripts": {
     "test": "exit 0",
     "release:patch": "npx release-it patch",
-    "release:minor": "npx release-it minor"
+    "release:minor": "npx release-it minor",
+    "release:major": "npx release-it major"
   },
   "repository": {
     "type": "git",
