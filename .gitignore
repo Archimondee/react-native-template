@@ -70,12 +70,5 @@ template/.prettierrc.js
 template/.watchmanconfig
 template/.eslintcache
 
-
-# .env files
-.env
-.env.staging
-.env.production
-.env.development
-
 #others
 TODO
