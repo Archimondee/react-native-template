@@ -1,4 +1,7 @@
 {
   "name": "ProjectName",
-  "displayName": "ProjectName"
+  "displayName": "ProjectName",
+  "ios": {
+    "sourceDir": "ios"
+  }
 }
