@@ -1,6 +1,6 @@
 {
   "name": "@archimondee/react-native-71-template",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "It is a minimalist React Native template with preconfigured common set of packages to start a new app.",
   "scripts": {
     "test": "exit 0",
