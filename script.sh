@@ -11,6 +11,7 @@ yarn install
 
 echo "\nInitializing husky hooks\n"
 npx husky set .husky/pre-commit "npm run lint"
+npx husky set .husky/pre-push "npm run lint"
 
 echo "\nInstalling Pods\n"
 cd ios && pod install && cd .. && cd ..
