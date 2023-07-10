@@ -14,19 +14,19 @@ The template will automatically install the `npm` dependencies and the `pods` (i
 
 ## Features
 
-- React Native version 0.71.12 [react-native] (https://reactnative.dev)
-- State management [redux] (https://redux-toolkit.js.org/)
-- Redux logger [redux-logger] (https://github.com/LogRocket/redux-logger)
-- Navigation using [react-navigation] (https://reactnavigation.org/) V6
-- HTTP Fetch [axios] (https://axios-http.com/)
-- File import [babel-plugin-module-resolver] (https://github.com/tleunen/babel-plugin-module-resolver)
-- Husky for lint your commit message [husky] (https://typicode.github.io/husky/)
-- Reanimated [react-native-reanimated] (https://docs.swmansion.com/react-native-reanimated/docs/)
-- Env config for Android and iOS using [react-native-config] (https://www.npmjs.com/package/react-native-config)
-- Async storage for saving persist data [async-storage] (https://github.com/react-native-async-storage/async-storage)
+- React Native version 0.71.12 [react-native](https://reactnative.dev)
+- State management [redux](https://redux-toolkit.js.org/)
+- Redux logger [redux-logger](https://github.com/LogRocket/redux-logger)
+- Navigation using [react-navigation](https://reactnavigation.org/) V6
+- HTTP Fetch [axios](https://axios-http.com/)
+- File import [babel-plugin-module-resolver](https://github.com/tleunen/babel-plugin-module-resolver)
+- Husky for lint your commit message [husky](https://typicode.github.io/husky/)
+- Reanimated [react-native-reanimated](https://docs.swmansion.com/react-native-reanimated/docs/)
+- Env config for Android and iOS using [react-native-config](https://www.npmjs.com/package/react-native-config)
+- Async storage for saving persist data [async-storage](https://github.com/react-native-async-storage/async-storage)
 - Eslint rule custom
 - Pre command scripts in package.json for easier life
-- Toast animated [react-native-root-toast] (https://www.npmjs.com/package/react-native-root-toast)
+- Toast animated [react-native-root-toast](https://www.npmjs.com/package/react-native-root-toast)
 - Preconfigured redux
 - Preconfigured navigation with bottom tabs
 - Baseservices ready
